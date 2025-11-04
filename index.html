@@ -37,16 +37,23 @@
             text-align: center;
             font-size: 0.9rem;
         }
+        .profile-photo {
+            float: right;
+            width: 150px;
+            margin: 0 0 1rem 1rem;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
     <article>
+        <img src="photo.jpg" alt="Max Henry" class="profile-photo">
         <h1>Max Henry</h1>
         <p class="author">max.henry@mail.mcgill.ca</p>
 
         <p>
             Researcher interested in human-computer interaction, computer-assisted creativity, 
-            and audio machine learning.
+            and audio machine learning. Audio developer. Musician. Nerd.
         </p>
 
         <p>
@@ -56,18 +63,22 @@
             at the Music Perception and Cognition Lab.
         </p>
 
-        <h2>Recent Work</h2>
-        
-        <p>
-            <strong>A Realtime Suggestion Engine for Computer-Assisted Sound Design</strong> (2025)<br>
-            Autoencoder-based AI assistant that learns from expert synthesizer presets to provide 
-            realtime parameter suggestions. User study showed 0.89 standard deviation improvement 
-            in sound-matching tasks.
+        <h2>Projects of Interest</h2>
+
+        <p class="project">
+            Working on an <a href="https://github.com/maxsolomonhenry/backprop">autograd engine</a> 
+            to learn about backprop, tensor calculus, and topological sort.
         </p>
 
-        <p>
-            <strong>Dismantling the Illusion of Amplitude Modulation-Induced Vibrato</strong> (2021)<br>
-            Psychoacoustic research on perceptual dimensions of amplitude modulation and pitch perception.
+        <p class="project">
+            Contributed to <a href="https://github.com/torchsynth/torchsynth">torchsynth</a>, 
+            a differentiable synthesizer in PyTorch 
+            (<a href="https://arxiv.org/abs/2104.12922">paper</a>).
+        </p>
+
+        <p class="project">
+            Built a <a href="https://github.com/maxsolomonhenry/aes_matlab_competition">phase vocoder plugin</a> 
+            in MATLAB that won silver at the AES Student Plugin Competition.
         </p>
 
         <h2>Selected Publications</h2>
@@ -83,27 +94,18 @@
             representations." <em>NeurIPS 2021 Competitions Track</em>.
         </p>
 
-        <p class="publication">
-            Noble, J., Thoret, E., Henry, M., & McAdams, S. (2020). "Semantic dimensions of 
-            sound mass music." <em>Music Perception</em>, 38(2), 214-242.
+        <h2>Theses</h2>
+        
+        <p>
+            <strong>A Realtime Suggestion Engine for Computer-Assisted Sound Design</strong> (2025)<br>
+            Autoencoder-based AI assistant that learns from expert synthesizer presets to provide 
+            realtime parameter suggestions. User study showed 0.89 standard deviation improvement 
+            in sound-matching tasks.
         </p>
 
-        <h2>Current Projects</h2>
-
-        <p class="project">
-            Working on an <a href="https://github.com/maxsolomonhenry/backprop">autograd engine</a> 
-            to learn about backprop, tensor calculus, and topological sort.
-        </p>
-
-        <p class="project">
-            Built a <a href="https://github.com/maxsolomonhenry/aes_matlab_competition">phase vocoder plugin</a> 
-            in MATLAB that won silver at the AES Student Plugin Competition.
-        </p>
-
-        <p class="project">
-            Contributed to <a href="https://github.com/torchsynth/torchsynth">torchsynth</a>, 
-            a differentiable synthesizer in PyTorch 
-            (<a href="https://arxiv.org/abs/2104.12922">paper</a>).
+        <p>
+            <strong>Dismantling the Illusion of Amplitude Modulation-Induced Vibrato</strong> (2021)<br>
+            Psychoacoustic research on perceptual dimensions of amplitude modulation and pitch perception.
         </p>
 
         <h2>Other</h2>
