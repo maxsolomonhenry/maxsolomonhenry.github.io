@@ -1,214 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Henry</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex.css/style.min.css">
-    <style>
-        body {
-            max-width: 50rem;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            font-size: 1.1rem;
-            line-height: 1.5;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-        .author {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
-        h2 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .publication {
-            margin-bottom: 0.5rem;
-        }
-        .project {
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-            transition: opacity 0.2s;
-        }
-        .social-icons a:hover {
-            opacity: 0.7;
-        }
-        .social-icons svg {
-            width: 24px;
-            height: 24px;
-        }
-        .social-icons a:nth-child(1) svg {
-            fill: #181717;
-        }
-        .social-icons a:nth-child(2) svg {
-            fill: #0A66C2;
-        }
-        .social-icons a:nth-child(3) svg {
-            fill: #4285F4;
-        }
-        .profile-photo {
-            float: right;
-            width: 150px;
-            margin: 0 0 1rem 1rem;
-            border: 1px solid #ccc;
-        }
-        .demo-gif {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 1rem auto;
-            border: 1px solid #ccc;
-        }
-        .graph {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 1rem auto;
-        }
-    </style>
-</head>
-<body>
-    <article>
-        <img src="photo.jpg" alt="Max Henry" class="profile-photo">
-        <h1>Max Henry</h1>
-        <p class="author">max.henry@mail.mcgill.ca (<a href="MaxHenry_CV_Academic.pdf">Academic CV</a>)</p>
+---
+layout: default
+---
+<article>
+    <img src="photo.jpg" alt="Max Henry" class="profile-photo">
+    <h1>Max Henry</h1>
+    <p class="author">max.henry@mail.mcgill.ca (<a href="MaxHenry_CV_Academic.pdf">Academic CV</a>)</p>
 
-        <div class="social-icons">
-            <a href="https://scholar.google.ca/citations?user=eSG4wAcAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/maxshenry" target="_blank" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-            </a>
-            <a href="https://github.com/maxsolomonhenry" target="_blank" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-            </a>
-        </div>
+    <div class="social-icons">
+        <a href="https://scholar.google.ca/citations?user=eSG4wAcAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/maxshenry" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/maxsolomonhenry" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+    </div>
 
-        <p>
-            Researcher interested in human-computer interaction, computer-assisted creativity, 
-            and audio machine learning. Audio developer. Musician. Nerd.
-        </p>
+    <p>
+        Researcher interested in human-computer interaction, computer-assisted creativity,
+        and audio machine learning. Audio developer. Musician. Nerd.
+    </p>
 
-        <p>
-            M.Sc. in Electrical and Computer Engineering, McGill University (2025). 
-            Built a realtime suggestion engine for synthesizer sound design at the Shared Reality Lab. 
-            M.A. in Music Technology, McGill University (2021). Researched psychoacoustics 
-            at the Music Perception and Cognition Lab.
-        </p>
+    <p>
+        M.Sc. in Electrical and Computer Engineering, McGill University (2025).
+        Built a realtime suggestion engine for synthesizer sound design at the Shared Reality Lab.
+        M.A. in Music Technology, McGill University (2021). Researched psychoacoustics
+        at the Music Perception and Cognition Lab.
+    </p>
 
-        <h2>Theses</h2>
-        
-        <p>
-            <strong>A Realtime Suggestion Engine for Computer-Assisted Sound Design</strong> (2025)<br>
-            Autoencoder-based AI assistant that learns from expert synthesizer presets to provide 
-            realtime parameter suggestions. User study showed 0.89 standard deviation improvement 
-            in sound-matching tasks.
-        </p>
+    <h2>Theses</h2>
 
-        <img src="gifs/four_knobs.gif" alt="Sound Design Assistant Demo" class="demo-gif">
+    <p>
+        <strong>A Realtime Suggestion Engine for Computer-Assisted Sound Design</strong> (2025)<br>
+        Autoencoder-based AI assistant that learns from expert synthesizer presets to provide
+        realtime parameter suggestions. User study showed 0.89 standard deviation improvement
+        in sound-matching tasks.
+    </p>
 
-        <p style="text-align: left; font-style: italic; margin-top: 0.5rem; margin-bottom: 1.5rem;">
-            The design assistant in action. Each knob has a "live" value (small circle), as well
-            as a "suggested" value (gray line). Suggestions react in realtime to the user, acting
-            as creative scaffolding (hints/help), and to anticipate design intent. (An "accept"
-            and "undo" button are not pictured.)
-        </p>
+    <img src="gifs/four_knobs.gif" alt="Sound Design Assistant Demo" class="demo-gif">
 
-        <!-- <img src="qualitative-graph-extended.png" alt="Qualitative Analysis Graph" class="graph">
+    <p style="text-align: left; font-style: italic; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        The design assistant in action. Each knob has a "live" value (small circle), as well
+        as a "suggested" value (gray line). Suggestions react in realtime to the user, acting
+        as creative scaffolding (hints/help), and to anticipate design intent. (An "accept"
+        and "undo" button are not pictured.)
+    </p>
 
-        <p style="text-align: left; font-style: italic; margin-top: 0.5rem; margin-bottom: 1.5rem;">
-            Code graph based on user interviews showing four themes (we used Louvain clustering):
-            Engine for Support (green), Engine for Discovery (blue), Patterns in Sound Design (purple),
-            and Pain Points (red).
-        </p> -->
+    <!-- <img src="qualitative-graph-extended.png" alt="Qualitative Analysis Graph" class="graph">
 
-        <p>
-            <strong>A Perceptual Study of Amplitude Modulation-Induced Vibrato</strong> (2021)<br>
-            Psychoacoustic research on perceptual dimensions of amplitude modulation and pitch
-            perception (<a href="https://www.mcgill.ca/mpcl/files/mpcl/henry_2021_mathesis.pdf">link</a>).
-        </p>
+    <p style="text-align: left; font-style: italic; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        Code graph based on user interviews showing four themes (we used Louvain clustering):
+        Engine for Support (green), Engine for Discovery (blue), Patterns in Sound Design (purple),
+        and Pain Points (red).
+    </p> -->
 
-        <h2>Projects of Interest</h2>
+    <p>
+        <strong>A Perceptual Study of Amplitude Modulation-Induced Vibrato</strong> (2021)<br>
+        Psychoacoustic research on perceptual dimensions of amplitude modulation and pitch
+        perception (<a href="https://www.mcgill.ca/mpcl/files/mpcl/henry_2021_mathesis.pdf">link</a>).
+    </p>
 
-        <p class="project">
-            Working on an <a href="https://github.com/maxsolomonhenry/backprop">autograd engine</a> 
-            to learn about backprop, tensor calculus, and topological sort.
-        </p>
+    <h2>Projects of Interest</h2>
 
-        <p class="project">
-            Contributed to <a href="https://github.com/torchsynth/torchsynth">torchsynth</a>, 
-            a differentiable synthesizer in PyTorch 
-            (<a href="https://arxiv.org/abs/2104.12922">paper</a>).
-        </p>
+    <p class="project">
+        Working on an <a href="https://github.com/maxsolomonhenry/backprop">autograd engine</a>
+        to learn about backprop, tensor calculus, and topological sort.
+    </p>
 
-        <p class="project">
-            🏆 Built a <a href="https://github.com/maxsolomonhenry/aes_matlab_competition">phase vocoder plugin</a> 
-            in MATLAB that won silver at the AES Student Plugin Competition.
-        </p>
+    <p class="project">
+        Contributed to <a href="https://github.com/torchsynth/torchsynth">torchsynth</a>,
+        a differentiable synthesizer in PyTorch
+        (<a href="https://arxiv.org/abs/2104.12922">paper</a>).
+    </p>
 
-        <h2>Selected Publications</h2>
+    <p class="project">
+        &#127942; Built a <a href="https://github.com/maxsolomonhenry/aes_matlab_competition">phase vocoder plugin</a>
+        in MATLAB that won silver at the AES Student Plugin Competition.
+    </p>
 
-        <p class="publication">
-            🏆 Lee, H., Jiang, R., Yoo, Y., Henry, M., & Cooperstock, J. R. (2022).
-            "The Sound of Hallucinations: Toward a more convincing emulation of internalized voices."
-            <em>CHI '22: Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems</em>.
-            <a href="https://doi.org/10.1145/3491102.3501871">https://doi.org/10.1145/3491102.3501871</a>
-            <em>Honorable Mention CHI 2022</em>
-        </p>
+    <h2>Selected Publications</h2>
 
-        <p class="publication">
-            Turian, J., Shier, J., Tzanetakis, G., McNally, K., & Henry, M. (2021).
-            "One Billion Audio Sounds from GPU-enabled Modular Synthesis."
-            <em>Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21)</em>.
-            <a href="https://arxiv.org/abs/2104.12922">arXiv:2104.12922</a>
-            (<a href="https://github.com/torchsynth/torchsynth">repo</a>)
-        </p>
+    <p class="publication">
+        &#127942; Lee, H., Jiang, R., Yoo, Y., Henry, M., & Cooperstock, J. R. (2022).
+        "The Sound of Hallucinations: Toward a more convincing emulation of internalized voices."
+        <em>CHI '22: Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems</em>.
+        <a href="https://doi.org/10.1145/3491102.3501871">https://doi.org/10.1145/3491102.3501871</a>
+        <em>Honorable Mention CHI 2022</em>
+    </p>
 
-        <p class="publication">
-            Turian, J. & Henry, M. (2020). "I'm sorry for your loss: Spectrally-based audio
-            distances are bad at pitch." <em>NeurIPS 2020 ICBINB Workshop</em>.
-            <a href="https://arxiv.org/abs/2012.04572">arXiv:2012.04572</a>
-        </p>
+    <p class="publication">
+        Turian, J., Shier, J., Tzanetakis, G., McNally, K., & Henry, M. (2021).
+        "One Billion Audio Sounds from GPU-enabled Modular Synthesis."
+        <em>Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21)</em>.
+        <a href="https://arxiv.org/abs/2104.12922">arXiv:2104.12922</a>
+        (<a href="https://github.com/torchsynth/torchsynth">repo</a>)
+    </p>
 
-        <h2>Other</h2>
+    <p class="publication">
+        Turian, J. & Henry, M. (2020). "I'm sorry for your loss: Spectrally-based audio
+        distances are bad at pitch." <em>NeurIPS 2020 ICBINB Workshop</em>.
+        <a href="https://arxiv.org/abs/2012.04572">arXiv:2012.04572</a>
+    </p>
 
-        <p>
-            Founding member of <a href="https://en.wikipedia.org/wiki/Suuns">SUUNS</a>, 
-            toured internationally for over a decade. Some older music and compositions at 
-            <a href="https://maxhenrymusic.com">maxhenrymusic.com</a>. SOCAN Young Composers 
-            Award recipient for television scoring.
-        </p>
+    <h2>Other</h2>
 
-        <footer>
-        </footer>
-    </article>
-</body>
-</html>
+    <p>
+        Founding member of <a href="https://en.wikipedia.org/wiki/Suuns">SUUNS</a>,
+        toured internationally for over a decade. Some older music and compositions at
+        <a href="https://maxhenrymusic.com">maxhenrymusic.com</a>. SOCAN Young Composers
+        Award recipient for television scoring.
+    </p>
+
+    <footer>
+    </footer>
+</article>

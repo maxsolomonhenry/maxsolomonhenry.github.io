@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex.css/style.min.css">
+    <style>
+        body {
+            max-width: 50rem;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .author {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .publication {
+            margin-bottom: 0.5rem;
+        }
+        .project {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s;
+        }
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+        .social-icons svg {
+            width: 24px;
+            height: 24px;
+        }
+        .social-icons a:nth-child(1) svg {
+            fill: #181717;
+        }
+        .social-icons a:nth-child(2) svg {
+            fill: #0A66C2;
+        }
+        .social-icons a:nth-child(3) svg {
+            fill: #4285F4;
+        }
+        .profile-photo {
+            float: right;
+            width: 150px;
+            margin: 0 0 1rem 1rem;
+            border: 1px solid #ccc;
+        }
+        .demo-gif {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+            border: 1px solid #ccc;
+        }
+        .graph {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav .sep {
+            margin: 0 0.5rem;
+            color: #999;
+        }
+        .post-date {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+        .post-list li {
+            margin-bottom: 1.5rem;
+        }
+        .post-list a {
+            font-size: 1.1rem;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .pagination a, .pagination span {
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="sep">|</span>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </nav>
+    {{ content }}
+</body>
+</html>
