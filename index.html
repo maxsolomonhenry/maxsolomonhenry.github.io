@@ -119,6 +119,17 @@ layout: default
         Award recipient for television scoring.
     </p>
 
+    {% if site.posts.size > 0 %}
+    {% assign latest = site.posts | first %}
+    <h2>Latest from the Blog</h2>
+    <p>
+        <span class="post-date">{{ latest.date | date: "%B %-d, %Y" }}</span><br>
+        <a href="{{ latest.url | relative_url }}"><strong>{{ latest.title }}</strong></a>
+    </p>
+    <p>{{ latest.excerpt | strip_html | truncatewords: 40 }}</p>
+    <p><a href="{{ '/blog/' | relative_url }}">Read more &rarr;</a></p>
+    {% endif %}
+
     <footer>
     </footer>
 </article>

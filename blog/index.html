@@ -4,17 +4,28 @@ title: Blog
 ---
 <h1>Blog</h1>
 
+{% assign latest = paginator.posts | first %}
+{% if latest %}
+<article class="latest-post">
+    <h2><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></h2>
+    <p class="post-date">{{ latest.date | date: "%B %-d, %Y" }}</p>
+    {{ latest.content }}
+</article>
+
+{% assign older = paginator.posts | slice: 1, paginator.posts.size %}
+{% if older.size > 0 %}
+<hr>
+<h2>Older Posts</h2>
 <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in older %}
     <li>
         <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span><br>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% if post.excerpt %}
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        {% endif %}
     </li>
     {% endfor %}
 </ul>
+{% endif %}
+{% endif %}
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
